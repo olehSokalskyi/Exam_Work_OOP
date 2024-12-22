@@ -36,7 +36,7 @@ public class OrderService(IOrderRepository orderRepository, ILogger logger, IOrd
                 if(product is null)
                 {
                     logger.LogInformation($"Product with id {product} not found");
-                    throw new Exception("Product not found");
+                    throw new ArgumentException("Product not found");
                 }
                 orderBuilder.AddProduct(product);
             }
@@ -60,7 +60,7 @@ public class OrderService(IOrderRepository orderRepository, ILogger logger, IOrd
             if(order is null)
             {
                 logger.LogInformation($"Order with id {id} not found");
-                throw new Exception("Order not found");
+                throw new ArgumentException("Order not found");
             }
             logger.LogInformation($"Get order with id {id}");
             return order;
@@ -80,7 +80,7 @@ public class OrderService(IOrderRepository orderRepository, ILogger logger, IOrd
             if(order is null)
             {
                 logger.LogInformation($"Order with id {orderId} not found");
-                throw new Exception("Order not found");
+                throw new ArgumentException("Order not found");
             }
             order.ClearProducts();
             foreach(var productId in products)
@@ -90,7 +90,7 @@ public class OrderService(IOrderRepository orderRepository, ILogger logger, IOrd
                 if(product is null)
                 {
                     logger.LogInformation($"Product with id {product} not found");
-                    throw new Exception("Product not found");
+                    throw new ArgumentException("Product not found");
                 }
                 order.AddProduct(product);
             }
@@ -115,7 +115,7 @@ public class OrderService(IOrderRepository orderRepository, ILogger logger, IOrd
             if(order is null)
             {
                 logger.LogInformation($"Order with id {orderId} not found");
-                throw new Exception("Order not found");
+                throw new ArgumentException("Order not found");
             }
             await orderRepository.Delete(order, cancellationToken);
             orderNotifier.NotifyDelete(order);

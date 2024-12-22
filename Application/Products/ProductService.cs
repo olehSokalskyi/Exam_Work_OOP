@@ -22,7 +22,7 @@ public class ProductService(ILogger logger, IProductRepository productRepository
             if (string.IsNullOrWhiteSpace(name))
             {
                 logger.LogInformation("Product name is required");
-                throw new Exception("Product name is required");
+                throw new ArgumentException("Product name is required");
             }
             var product = Product.New(ProductId.New(), name, price);
             var newProduct = await productRepository.Add(product, cancellationToken);
@@ -45,7 +45,7 @@ public class ProductService(ILogger logger, IProductRepository productRepository
             if(product is null)
             {
                 logger.LogInformation($"Product with id {id} not found");
-                throw new Exception("Product not found");
+                throw new ArgumentException("Product not found");
             }
             logger.LogInformation($"Get product with id {id}");
             return product;
@@ -64,13 +64,13 @@ public class ProductService(ILogger logger, IProductRepository productRepository
             if (string.IsNullOrWhiteSpace(name))
             {
                 logger.LogInformation("Product name is required");
-                throw new Exception("Product name is required");
+                throw new ArgumentException("Product name is required");
             }
             var product = await productRepository.GetById(productId, cancellationToken);
             if (product is null)
             {
                 logger.LogInformation($"Product with id {productId} not found");
-                throw new Exception("Product not found");
+                throw new ArgumentException("Product not found");
             }
             product.UpdateDetails(name,price);
             var updatedProduct = await productRepository.Update(product, cancellationToken);
@@ -94,7 +94,7 @@ public class ProductService(ILogger logger, IProductRepository productRepository
             if (product is null)
             {
                 logger.LogInformation($"Product with id {productId} not found");
-                throw new Exception("Product not found");
+                throw new ArgumentException("Product not found");
             }
             await productRepository.Delete(product, cancellationToken);
             logger.LogInformation($"Delete product with id {product.Id}");

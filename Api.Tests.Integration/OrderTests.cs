@@ -68,7 +68,7 @@ public class OrderTests : BaseTest, IAsyncLifetime
     {
         var products = new List<ProductId> { new ProductId(Guid.NewGuid()) };
 
-        await Assert.ThrowsAsync<Exception>(async () =>
+        await Assert.ThrowsAsync<ArgumentException>(async () =>
             await _orderService.Add(products, CancellationToken.None));
     }
     
@@ -87,7 +87,7 @@ public class OrderTests : BaseTest, IAsyncLifetime
     {
         var orderId = new OrderId(Guid.NewGuid());
 
-        await Assert.ThrowsAsync<Exception>(async () =>
+        await Assert.ThrowsAsync<ArgumentException>(async () =>
             await _orderService.Delete(orderId, CancellationToken.None));
     }
     
@@ -96,7 +96,7 @@ public class OrderTests : BaseTest, IAsyncLifetime
     {
         var orderId = new OrderId(Guid.NewGuid());
 
-        await Assert.ThrowsAsync<Exception>(async () =>
+        await Assert.ThrowsAsync<ArgumentException>(async () =>
             await _orderService.GetById(orderId, CancellationToken.None));
     }
     

@@ -84,7 +84,7 @@ public class ProductTests : BaseTest, IAsyncLifetime
     [Fact]
     public async Task CreateProduct_Failure_InvalidData()
     {
-        await Assert.ThrowsAsync<Exception>(async () =>
+        await Assert.ThrowsAsync<ArgumentException>(async () =>
             await _productService.Add("", -10.00m, CancellationToken.None));
     }
 
@@ -93,7 +93,7 @@ public class ProductTests : BaseTest, IAsyncLifetime
     {
         var productId = new ProductId(Guid.NewGuid());
 
-        await Assert.ThrowsAsync<Exception>(async () =>
+        await Assert.ThrowsAsync<ArgumentException>(async () =>
             await _productService.Delete(productId, CancellationToken.None));
     }
 
@@ -102,7 +102,7 @@ public class ProductTests : BaseTest, IAsyncLifetime
     {
         var productId = new ProductId(Guid.NewGuid());
 
-        await Assert.ThrowsAsync<Exception>(async () =>
+        await Assert.ThrowsAsync<ArgumentException>(async () =>
             await _productService.Update(productId, "Nonexistent Product", 50.00m, CancellationToken.None));
     }
 
@@ -111,7 +111,7 @@ public class ProductTests : BaseTest, IAsyncLifetime
     {
         var productId = new ProductId(Guid.NewGuid());
 
-        await Assert.ThrowsAsync<Exception>(async () =>
+        await Assert.ThrowsAsync<ArgumentException>(async () =>
             await _productService.GetById(productId, CancellationToken.None));
     }
 }
