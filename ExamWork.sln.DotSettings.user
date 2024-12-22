@@ -1,0 +1,43 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=49262f8d_002Dcdde_002D4c11_002D84cd_002Dc76b32756119/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreateOrder_Success #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::F1AA2A58-38FB-4F80-964A-BC47D817DFBE::net8.0::Api.Tests.Integration.OrderTests.CreateOrder_Success&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4b56948b_002D60a9_002D46d8_002Da41c_002D4a92f9288779/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="OrderTests #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::F1AA2A58-38FB-4F80-964A-BC47D817DFBE::net8.0::Api.Tests.Integration.OrderTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a0b22c68_002D7cac_002D4fb2_002Dbf3a_002D7eba4373945b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreateOrder_Success #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::F1AA2A58-38FB-4F80-964A-BC47D817DFBE::net8.0::Api.Tests.Integration.OrderTests.CreateOrder_Success&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b8b8052d_002Db4fd_002D4a46_002Dbe27_002D52920243ec1e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="OrderTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::F1AA2A58-38FB-4F80-964A-BC47D817DFBE::net8.0::Api.Tests.Integration.OrderTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c63c44ef_002D3154_002D47d2_002Daca6_002Dff981494754b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreateOrder_Success #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::F1AA2A58-38FB-4F80-964A-BC47D817DFBE::net8.0::Api.Tests.Integration.OrderTests.CreateOrder_Success&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e6ae2ba1_002Dabea_002D41e5_002Db3be_002D66341aa99878/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="OrderTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::F1AA2A58-38FB-4F80-964A-BC47D817DFBE::net8.0::Api.Tests.Integration.OrderTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=eaf0fec5_002D4f7d_002D494e_002Da1bf_002D4e4c5b3edb8b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreateOrder_Success" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::F1AA2A58-38FB-4F80-964A-BC47D817DFBE::net8.0::Api.Tests.Integration.OrderTests.CreateOrder_Success&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ec150506_002D38c7_002D4c37_002D89a4_002D807f1e7a4161/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CreateOrder_Success #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::F1AA2A58-38FB-4F80-964A-BC47D817DFBE::net8.0::Api.Tests.Integration.OrderTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::F1AA2A58-38FB-4F80-964A-BC47D817DFBE::net8.0::Api.Tests.Integration.ProductTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::F1AA2A58-38FB-4F80-964A-BC47D817DFBE::net8.0::Api.Tests.Integration.OrderObserverTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
