@@ -37,9 +37,11 @@ public class App
         _logger = serviceProvider.GetRequiredService<ILogger>();
     }
 
-    public async Task RunAsync(CancellationToken cancellationToken)
+    public async Task Run(CancellationToken cancellationToken)
+{
+    while (true)
     {
-        while (true)
+        try
         {
             _consoleWrapper.WriteLine("Select an option:");
             _consoleWrapper.WriteLine("1. Get all orders");
@@ -95,7 +97,12 @@ public class App
                     break;
             }
         }
+        catch (Exception ex)
+        {
+            _consoleWrapper.WriteLine($"An error occurred: {ex.Message}");
+        }
     }
+}
 
     private async Task GetAllOrders(CancellationToken cancellationToken)
     {
@@ -103,6 +110,10 @@ public class App
         foreach (var ord in orders)
         {
             _consoleWrapper.WriteLine($"Order ID: {ord.Id}");
+            foreach (var prod in ord.Products)
+            {
+                _consoleWrapper.WriteLine($"Product ID: {prod.Id}, Name: {prod.Name}, Price: {prod.Price}");
+            }
         }
     }
 
@@ -123,6 +134,10 @@ public class App
         var orderId = new OrderId(Guid.Parse(_consoleWrapper.ReadLine()));
         var order = await _orderService.GetById(orderId, cancellationToken);
         _consoleWrapper.WriteLine($"Order ID: {order.Id}");
+        foreach (var prod in order.Products)
+        {
+            _consoleWrapper.WriteLine($"Product ID: {prod.Id}, Name: {prod.Name}, Price: {prod.Price}");
+        }
     }
 
     private async Task UpdateOrder(CancellationToken cancellationToken)

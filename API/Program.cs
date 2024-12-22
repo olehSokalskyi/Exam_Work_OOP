@@ -8,4 +8,4 @@ var host = await HostCreator.CreateHost(args);
 
 var serviceProvider = host.Services;
 var app = new App(serviceProvider);
-await app.RunAsync(new CancellationToken());
+await app.Run(new CancellationToken());

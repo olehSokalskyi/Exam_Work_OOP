@@ -40,6 +40,7 @@ public class OrderRepository(ApplicationDbContext context) : IOrderRepository
     {
         var entity = await context.Orders
             .AsNoTracking()
+            .Include(x=> x.Products)
             .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
 
         return entity;
@@ -94,6 +95,7 @@ public class OrderRepository(ApplicationDbContext context) : IOrderRepository
     {
         return await context.Orders
             .AsNoTracking()
+            .Include(x=> x.Products)
             .ToListAsync(cancellationToken);
     }
 }
